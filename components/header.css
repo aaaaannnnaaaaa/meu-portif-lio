@@ -1,0 +1,110 @@
+/* Adicionando a onda SVG embaixo do header */
+.header__wave {
+  position: relative;
+  top: -1px; /* remove espaçamento */
+  margin-bottom: -4px;
+}
+
+.header__wave svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Logo container */
+.logo-container {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -1rem; /* puxando mais pro canto esquerdo */
+}
+
+
+.logo {
+  width: 150%;
+  height: 150%;
+  object-fit: cover;
+  border-radius: 50%; /* Deixa redondo */
+  border: 6px solid rgb(0, 0, 0); /* Opcional: borda para destacar */
+
+}
+
+/* Container principal */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #421869;
+    padding: 1rem 2rem;
+    color: #995bd5;
+  }
+  
+  /* Espaço reservado para logo (invisível, só pra ocupar espaço) */
+  .logo-space {
+    width: 60px;
+    height: 40px;
+  }
+  
+  /* Navegação */
+  .nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Links principais */
+  .permalinks {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .permalinks li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  /* Hamburguer */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    margin-left: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 2px;
+    background-color: #995bd5;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .permalinks {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #995bd5;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+      z-index: 1;
+    }
+  
+    .permalinks.open {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  

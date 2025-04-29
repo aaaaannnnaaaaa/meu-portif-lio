@@ -1,0 +1,161 @@
+.carousel__wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Square width */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .carousel__item {
+    width: 100%;
+    height: 400px; /* Square height */
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    background-color: #509724; /* Light background for the item */
+  }
+  
+  .carous#experience {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .carousel__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .personal__timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    max-width: 500px;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .personal__event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .event__image {
+    width: 180px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .event__dot {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .event__content {
+    max-width: 400px;
+    padding: 0 1rem;
+  }
+  
+  .carousel__button {
+    background: none;
+    border: 2px solid #000;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .carousel__button:hover {
+    background-color: #509724;
+  }
+  
+  .carousel__button--prev {
+    position: absolute;
+    left: -40px;
+  }
+  
+  .carousel__button--next {
+    position: absolute;
+    right: -40px;
+  }
+  el__content {
+    position: relative;
+    background: #995bd5; /* Changed to white */
+    border-radius: 10px;
+    text-align: left;
+    max-width: 500px; /* Accommodates the image */
+    padding: 1rem;
+  }
+  
+  .carousel__content img {
+    width: 100%; /* Makes the image fill the content block width */
+    height: 200px; /* Fixed height for consistency */
+    object-fit: contain; /* Ensures the image fits without stretching */
+    border-radius: 8px; /* Slight rounding for a cute look */
+    margin-bottom: 1rem; /* Space between image and text */
+  }
+  
+  .carousel__content h4 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .carousel__content p {
+    margin: 0 0 1rem 0;
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  .carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #421869;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+  }
+  
+  .carousel__button--prev {
+    left: 10px;
+  }
+  
+  .carousel__button--next {
+    right: 10px;
+  }
+  
+  /* Section headers */
+  #experience {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  #experience h5 {
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  #experience h2 {
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
